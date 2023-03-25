@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+.cursor{
+    cursor:pointer
+}
+
+.form-control:focus{
+    border-color: inherit;
+    box-shadow: none;
+}
+
+.form-control{
+    height: 40px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    margin-top: 8px;
+}

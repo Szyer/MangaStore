@@ -1,0 +1,75 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-lg-10 offset-md-1 col-sm-12">
+      <div>
+        <div class="mb-5">
+          <h3>MangaStore ::: Unlimited Epicness!</h3>
+        </div>
+        <div class="d-flex justify-content-between mb-5">
+          <div>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search Manga....."
+              autocomplete="off"
+            />
+          </div>
+          <div>
+            <a [routerLink]="['/add-manga']" class="p-2">
+              <button class="btn btn-success">Add Manga</button>
+            </a>
+
+            <a [routerLink]="['/rent']">
+              <button class="btn btn-warning">Rent Manga</button>
+            </a>
+          </div>
+        </div>
+
+        <div style="overflow-x: auto"> 
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Mangaka</th>
+                <th scope="col">Title</th>
+                <th scope="col">Studio</th>
+                <th scope="col">Genre</th>
+                <th scope="col">Volume</th>
+                <th scope="col">Year</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let manga of mangas$; let i = index">
+                <td scope="row">{{ manga.id }}</td>
+                <td scope="row">{{ manga.mangaka }}</td>
+                <td scope="row">{{ manga.title }}</td>
+                <td scope="row">{{ manga.studio }}</td>
+                <td scope="row">{{ manga.genre }}</td>
+                <td scope="row">{{ manga.volumes }}</td>
+                <td scope="row">{{ manga.year }}</td>
+                <td class="td-btn">
+                  <div class="btn-group" role="group">
+                    <button
+                      type="button"
+                      class="btn btn-outline-success btn-sm"
+                      (click)="onUpdate(manga.id)"
+                    >
+                      Update
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-outline-danger btn-sm mr-2"
+                      (click)="onDelete(manga.id)"
+                    >
+                      Delete
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

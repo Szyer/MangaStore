@@ -1,0 +1,27 @@
+{
+  "posts": [
+    {
+      "title": "Berserk",
+      "studio": "Studio Gaga",
+      "genre": "Psychological, Seinen",
+      "mangaka": "Kentaro Miura",
+      "year": "1989-present",
+      "volumes": "14-?",
+      "id": 1
+    }
+  ],
+  "rent": [
+    {
+      "posts": [
+        {
+          "id": "1",
+          "name": "Alex",
+          "bookTitle": "Vagabond",
+          "bookAuthor": "Inoue",
+          "rentedOn": "string",
+          "returDate": "string"
+        }
+      ]
+    }
+  ]
+}

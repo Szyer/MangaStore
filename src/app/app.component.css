@@ -1,0 +1,15 @@
+a img{
+    margin-left: 2rem;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .spacer {
+    margin-left: 10px; /* adjust as needed */
+    font-size: 1.5rem; /* adjust as needed */
+    font-weight: bold;
+  }
+  
