@@ -49,7 +49,7 @@ export class UpdateMangaComponent {
     this.toastr.success("Updated the Manga Successfully")
     setTimeout(()=>{
       location.href = '/';
-    },1000);
+    },100);
   });
  }
 

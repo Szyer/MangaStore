@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AddMangaComponent } from './add-manga/add-manga.component';
 import { RentComponent } from './rent/rent.component';
@@ -17,8 +17,8 @@ import { ToastrService } from 'ngx-toastr';
   providers: [MangaService]
 })
 export class MangaComponent {
-
-  public mangas$ : any;
+  @Input() mangas$: any;
+  
   constructor(
    private manga: MangaService,
    private toastr: ToastrService,

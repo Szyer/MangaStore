@@ -31,7 +31,7 @@ export class MangaService {
     return this.http.post(`${this.rent}`, input); 
   }
 
-  postManga(id:any, input:any): Observable<any>{
-    return this.http.patch(`${this.data}/${id}`, input);
+  postManga(input:any): Observable<any>{
+    return this.http.post<any>(`${this.data}`, input);
   }
 }

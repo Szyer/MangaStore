@@ -6,8 +6,17 @@
       "genre": "Psychological, Seinen",
       "mangaka": "Kentaro Miura",
       "year": "1989-present",
-      "volumes": "15-?",
+      "volumes": "14-present",
       "id": 1
+    },
+    {
+      "mangaka": "Inoue",
+      "title": "Vagabond",
+      "studio": "Eiji",
+      "genre": "Historical, Samurai",
+      "volumes": "37",
+      "year": 2015,
+      "id": 2
     }
   ],
   "rent": [
@@ -19,7 +28,7 @@
           "bookTitle": "Vagabond",
           "bookAuthor": "Inoue",
           "rentedOn": "string",
-          "returDate": "string"
+          "returnDate": "string"
         }
       ]
     }
